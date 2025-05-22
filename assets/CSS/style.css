@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Alice";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/alice/alice-v20-latin-regular.woff2") format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
