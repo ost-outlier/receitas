@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roteiro de Apresentação</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .header {
+        text-align: center;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, #2d2d2d 0%, #1f1f1f 100%);
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .header h1 {
+        color: #4fc3f7;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        color: #b0b0b0;
+        font-size: 14px;
+      }
+
+      .fala-block {
+        background: #1f1f1f;
+        border-left: 5px solid #4fc3f7;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .fala-block:hover {
+        transform: translateX(5px);
+        box-shadow: 0 6px 20px rgba(79, 195, 247, 0.2);
+      }
+
+      .fala-jady {
+        border-left-color: #4fc3f7;
+      }
+
+      .fala-claudia {
+        border-left-color: #f06292;
+      }
+
+      .fala-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .apresentador {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .apresentador-jady {
+        background: rgba(79, 195, 247, 0.2);
+        color: #4fc3f7;
+      }
+
+      .apresentador-claudia {
+        background: rgba(240, 98, 146, 0.2);
+        color: #f06292;
+      }
+
+      .numero-fala {
+        background: #2d2d2d;
+        color: #ffffff;
+        padding: 6px 14px;
+        border-radius: 15px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .essencia {
+        background: #2d2d2d;
+        padding: 12px 16px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        border-left: 3px solid #ffa726;
+      }
+
+      .essencia-label {
+        color: #ffa726;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+
+      .essencia-text {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .fala-content {
+        background: #2a2a2a;
+        padding: 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 1.8;
+        color: #e8e8e8;
+      }
+
+      .fala-icon {
+        display: inline-block;
+        margin-right: 8px;
+        font-size: 18px;
+      }
+
+      .separador {
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #3a3a3a, transparent);
+        margin: 35px 0;
+      }
+
+      @media print {
+        body {
+          background: white;
+          color: black;
+        }
+
+        .fala-block {
+          break-inside: avoid;
+          page-break-inside: avoid;
+          background: white;
+          border: 2px solid #333;
+        }
+
+        .fala-content {
+          background: #f5f5f5;
+          color: black;
+        }
+
+        .header {
+          background: white;
+          border: 2px solid #333;
+        }
+
+        .header h1 {
+          color: #333;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 22px;
+        }
+
+        .fala-block {
+          padding: 20px;
+        }
+
+        .fala-content {
+          font-size: 15px;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>📋 Roteiro de Apresentação</h1>
+        <p>Análise de Satisfação no Trabalho</p>
+      </div>
+      <!-- FALA 7 - QUEZIA -->
+      <div class="fala-block fala-claudia">
+        <div class="fala-header">
+          <span class="apresentador apresentador-claudia">👤 Quezia</span>
+          <span class="numero-fala">1ª Fala - Antes das melhorias</span>
+        </div>
+
+        <div class="essencia">
+          <div class="essencia-label">💡 Essência</div>
+          <div class="essencia-text">Os pontos positivos</div>
+        </div>
+
+        <div class="fala-content">
+          <span class="fala-icon">💬</span>
+          “Antes de falar das melhorias, é importante destacar os pontos fortes da empresa. Os resultados mostram uma alta satisfação com os colegas, com a chefia e com a própria natureza do trabalho. Isso indica que a empresa já possui um ambiente acolhedor, colaborativo e propício ao bem-estar dos colaboradores. Essas são bases muito sólidas, que precisam ser valorizadas e preservadas.”
+        </div>
+      </div>
+
+
+      
+       <div class="fala-block fala-claudia">
+        <div class="fala-header">
+          <span class="apresentador apresentador-claudia">👤 Quezia</span>
+          <span class="numero-fala">2ª Fala - Slide Recomendações</span>
+        </div>
+
+        <div class="essencia">
+          <div class="essencia-label">💡 SLIDE</div>
+          <div class="essencia-text">Recomendações para melhoria da satisfação no ambiente de trabalho</div>
+        </div>
+
+        <div class="fala-content">
+          <span class="fala-icon">💬</span>
+          “Com base nos resultados, recomenda-se criar critérios claros de crescimento profissional e estabelecer ciclos regulares de feedback, para reconhecer avanços e alinhar expectativas. Também é importante investir em treinamentos internos e melhorar a comunicação sobre promoções, para aumentar o senso de justiça, pertencimento e motivação.”
+        </div>
+        </div>
+        <div class="fala-block fala-claudia">
+        <div class="fala-header">
+          <span class="apresentador apresentador-claudia">👤 Quezia</span>
+          <span class="numero-fala">3ª Fala - Slide Conclusão</span>
+        </div>
+
+        <div class="essencia">
+          <div class="essencia-label">💡 SLIDE</div>
+          <div class="essencia-text">CONCLUSÃO</div>
+        </div>
+
+        <div class="fala-content">
+          <span class="fala-icon">💬</span>
+          “O diagnóstico indicou bases sólidas nas relações interpessoais, fundamentais para o bom clima organizacional. Contudo, há desafios em reconhecer e promover o desenvolvimento dos colaboradores de forma transparente. Implementar intervenções focadas em feedback, crescimento claro e comunicação poderá fortalecer o vínculo e a satisfação, refletindo em maior produtividade e qualidade dos serviços prestados pela empresa de saúde bucal.”
+        </div>
+    </div>
+
+    
+  </body>
+</html>
