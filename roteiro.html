@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roteiro de Apresentação</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .header {
+        text-align: center;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, #2d2d2d 0%, #1f1f1f 100%);
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .header h1 {
+        color: #4fc3f7;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        color: #b0b0b0;
+        font-size: 14px;
+      }
+
+      .fala-block {
+        background: #1f1f1f;
+        border-left: 5px solid #4fc3f7;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .fala-block:hover {
+        transform: translateX(5px);
+        box-shadow: 0 6px 20px rgba(79, 195, 247, 0.2);
+      }
+
+      .fala-jady {
+        border-left-color: #4fc3f7;
+      }
+
+      .fala-claudia {
+        border-left-color: #f06292;
+      }
+
+      .fala-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .apresentador {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .apresentador-jady {
+        background: rgba(79, 195, 247, 0.2);
+        color: #4fc3f7;
+      }
+
+      .apresentador-claudia {
+        background: rgba(240, 98, 146, 0.2);
+        color: #f06292;
+      }
+
+      .numero-fala {
+        background: #2d2d2d;
+        color: #ffffff;
+        padding: 6px 14px;
+        border-radius: 15px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .essencia {
+        background: #2d2d2d;
+        padding: 12px 16px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        border-left: 3px solid #ffa726;
+      }
+
+      .essencia-label {
+        color: #ffa726;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+
+      .essencia-text {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .fala-content {
+        background: #2a2a2a;
+        padding: 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 1.8;
+        color: #e8e8e8;
+      }
+
+      .fala-icon {
+        display: inline-block;
+        margin-right: 8px;
+        font-size: 18px;
+      }
+
+      .separador {
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #3a3a3a, transparent);
+        margin: 35px 0;
+      }
+
+      @media print {
+        body {
+          background: white;
+          color: black;
+        }
+
+        .fala-block {
+          break-inside: avoid;
+          page-break-inside: avoid;
+          background: white;
+          border: 2px solid #333;
+        }
+
+        .fala-content {
+          background: #f5f5f5;
+          color: black;
+        }
+
+        .header {
+          background: white;
+          border: 2px solid #333;
+        }
+
+        .header h1 {
+          color: #333;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 22px;
+        }
+
+        .fala-block {
+          padding: 20px;
+        }
+
+        .fala-content {
+          font-size: 15px;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>📋 Roteiro de Apresentação</h1>
+        <p>Análise de Satisfação no Trabalho</p>
+      </div>
+
+      <!-- FALA 1 - JADY -->
+      <div class="fala-block fala-jady">
+        <div class="fala-header">
+          <span class="apresentador apresentador-jady">👤 Jady</span>
+          <span class="numero-fala">1ª Fala</span>
+        </div>
+
+        <div class="essencia">
+          <div class="essencia-label">💡 Essência</div>
+          <div class="essencia-text">Perfil dos participantes e sua relevância</div>
+        </div>
+
+        <div class="fala-content">
+          <span class="fala-icon">💬</span>
+          "Vamos agora aos resultados. A equipe pesquisada é composta por profissionais maduros, com idade média de 41 anos e mais de 5 anos de vínculo com a empresa. Esse perfil traz uma visão experiente e estável sobre o ambiente de trabalho."
+        </div>
+      </div>
+
+      <!-- FALA 2 - JADY -->
+      <div class="fala-block fala-jady">
+        <div class="fala-header">
+          <span class="apresentador apresentador-jady">👤 Jady</span>
+          <span class="numero-fala">2ª Fala</span>
+        </div>
+
+        <div class="essencia">
+          <div class="essencia-label">💡 Essência</div>
+          <div class="essencia-text">Melhor resultado - relações entre colegas</div>
+        </div>
+
+        <div class="fala-content">
+          <span class="fala-icon">💬</span>
+          "O ponto mais positivo foi a satisfação com os colegas, com média de 5,72 — esse foi o único indicador acima de 'satisfeito' na escala. Isso mostra um ambiente colaborativo e acolhedor, que é fundamental para a permanência dos profissionais."
+        </div>
+      </div>
+
+      <!-- FALA 3 - JADY -->
+      <div class="fala-block fala-jady">
+        <div class="fala-header">
+          <span class="apresentador apresentador-jady">👤 Jady</span>
+          <span class="numero-fala">3ª Fala</span>
+        </div>
+
+        <div class="essencia">
+          <div class="essencia-label">💡 Essência</div>
+          <div class="essencia-text">Chefe e trabalho também foram bem avaliados</div>
+        </div>
+
+        <div class="fala-content">
+          <span class="fala-icon">💬</span>
+          "A satisfação com o chefe e com a natureza do trabalho também ficaram perto de 'satisfeito', com médias de 4,92 e 4,88. Isso indica respeito nas relações hierárquicas e que as pessoas se identificam com o que fazem — e isso é importante para a qualidade de vida no trabalho."
+        </div>
+      </div>
+
+      <div class="separador"></div>
+
+      <!-- FALA 4 - CLÁUDIA -->
+      <div class="fala-block fala-claudia">
+        <div class="fala-header">
+          <span class="apresentador apresentador-claudia">👤 Cláudia</span>
+          <span class="numero-fala">4ª Fala</span>
+        </div>
+
+        <div class="essencia">
+          <div class="essencia-label">💡 Essência</div>
+          <div class="essencia-text">Fragilidades: Promoções e recompensas ficaram mais baixas</div>
+        </div>
+
+        <div class="fala-content">
+          <span class="fala-icon">💬</span>
+          "Por outro lado, as dimensões de promoções e recompensas apresentaram as menores médias: 4,19 e 4,64, ficando entre 'indiferente' e 'satisfeito'. Quando colaboradores não percebem clareza em reconhecimento e oportunidades de crescimento, a satisfação tende a cair."
+        </div>
+      </div>
+
+      <!-- FALA 5 - CLÁUDIA -->
+      <div class="fala-block fala-claudia">
+        <div class="fala-header">
+          <span class="apresentador apresentador-claudia">👤 Cláudia</span>
+          <span class="numero-fala">5ª Fala</span>
+        </div>
+
+        <div class="essencia">
+          <div class="essencia-label">💡 Essência</div>
+          <div class="essencia-text">Valores Mínimos Preocupantes: há pessoas muito insatisfeitas</div>
+        </div>
+
+        <div class="fala-content">
+          <span class="fala-icon">💬</span>
+          "Embora as médias estejam na zona intermediária, existem colaboradores muito insatisfeitos. Houve notas mínimas de 2,2 em promoções e 2,4 em recompensas — ou seja, 'muito insatisfeito'. Isso requer atenção, pois pode impactar negativamente o clima organizacional."
+        </div>
+      </div>
+
+      <div class="separador"></div>
+
+      <!-- FALA 6 - JADY -->
+      <div class="fala-block fala-jady">
+        <div class="fala-header">
+          <span class="apresentador apresentador-jady">👤 Jady</span>
+          <span class="numero-fala">6ª Fala - FINAL</span>
+        </div>
+
+        <div class="essencia">
+          <div class="essencia-label">💡 Essência</div>
+          <div class="essencia-text">Síntese: empresa boa em relações, precisa melhorar em reconhecimento</div>
+        </div>
+
+        <div class="fala-content">
+          <span class="fala-icon">💬</span>
+          "Em resumo: a empresa se destaca na qualidade das relações humanas e no vínculo com o trabalho, mas tem desafios em reconhecimento e desenvolvimento profissional. Não é um cenário crítico, mas demanda atenção preventiva. Investir em transparência nos critérios de crescimento pode elevar ainda mais o engajamento da equipe."
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
